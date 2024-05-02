@@ -9,7 +9,7 @@ import androidx.room.RoomDatabase
 @Database(entities = [Note::class], version = 1, exportSchema = false)
 abstract class NoteDatabase : RoomDatabase() {
 
-    abstract fun todoDao(): NoteDao
+    abstract fun noteDao(): NoteDao
 
     companion object {
         @Volatile
@@ -18,7 +18,7 @@ abstract class NoteDatabase : RoomDatabase() {
         fun getDatabase(context: Context): NoteDatabase {
             // if the Instance is not null, return it, otherwise create a new database instance.
             return Instance ?: synchronized(this) {
-                Room.databaseBuilder(context, NoteDatabase::class.java, "todo_database")
+                Room.databaseBuilder(context, NoteDatabase::class.java, "note_database")
                     /**
                      * Setting this option in your app's database builder means that Room
                      * permanently deletes all data from the tables in your database when it

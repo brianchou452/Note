@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Note</string>
+    <string name="note_edit_title">編輯記事</string>
+    <string name="back_button">返回</string>
+    <string name="no_item_description">點擊“撰寫記事”按鈕來新增</string>
+    <string name="delete_button">刪除</string>
+    <string name="new_note_button">撰寫記事</string>
+    <string name="title_label">標題</string>
+    <string name="content_label">內容</string>
+</resources>
